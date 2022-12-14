@@ -2,17 +2,17 @@ import smtplib
 import ssl
 import getpass
 
-from 
+from contraseña import PASSWORD_APP
 
 port = 465
-password = getpass.getpass()
+password = PASSWORD_APP
 
 context = ssl.create_default_context()
 
 email_remitente = 'javierrojas14.jr@gmail.com'
 email_receptor = 'pruebadevelopmentjavier@gmail.com'
 
-mensaje = '''
+mensaje = '''\
 Subject: Hola, soy yo
 
 
